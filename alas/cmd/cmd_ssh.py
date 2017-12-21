@@ -30,7 +30,7 @@ def _get_conf_obj(host, port, user, id_file, props):
                    '~/.ssh/config.')
 @click.option('-pr', '--prop', type=click.STRING, multiple=True,
               help='Multiple additional property for SSH alias, must '
-                   'be in format k="v" with no space between.')
+                   'be in format "Attribute value".')
 @click.option('-i', '--id-file', type=click.Path(),
               help='Identity file used for perform authz in SSH session.')
 @click.option('-h', '--host',
